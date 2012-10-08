@@ -1,0 +1,11 @@
+﻿This is a DFA created in Haskell. The DFA will accept
+all strings with the following property
+  The starting end ending characters are the same.
+  Any two neighboring letters are not the same.
+The DFA accepts all strings that have a,b and c in their alphabeta.
+(Only strings that contain a b or c.)
+
+There is no main function so this must be loaded into GHC in order
+to use this.
+
+Created by David Tran using GHC v 7.4.1
