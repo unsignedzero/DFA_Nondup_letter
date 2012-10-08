@@ -5,7 +5,7 @@ all strings with the following property
 The DFA accepts all strings that have a,b and c in their alphabeta.
 (Only strings that contain a b or c.)
 
-There is no main function so this must be loaded into GHC in order
-to use this.
+This can be called by runhaskell or loaded into ghci. 
+The main function to call is h2.
 
 Created by David Tran using GHC v 7.4.1
