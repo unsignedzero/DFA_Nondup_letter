@@ -84,16 +84,11 @@ h2cc (x:xs)
   | x == 'c' = False
   | otherwise = False
 
---Support Function
-print_bool :: Bool -> [Char]                                                              
-print_bool True = "True"
-print_bool False = "False"  
-
 -- Main Function
 main :: IO()
 main = do
   putStrLn "Starting DFA_NonDupLetter Program"
   putStrLn "Enter a string consisting of the letters a,b and c"
   input_line <- getLine
-  putStrLn $ print_bool $ h2 input_line
+  putStrLn $ show $ h2 input_line
 
