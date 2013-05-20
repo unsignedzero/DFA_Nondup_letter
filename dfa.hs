@@ -1,9 +1,21 @@
-﻿-- This is from Ravi's homework H2 Problem 2
--- We will assume the alphabet contains elements from {'a','b','c'}
+﻿-- This DFA was originally from Ravi's Homework set # 2 Problem 2
+-- The problem was to create a DFA (not code it).
+--
+-- We will assume the alphabet contains letters from {'a','b','c'}
 -- The accept state is all strings that:
 -- -- have different starting and ending characters
 -- -- any two neighboring characters are not identical
+-- or the empty string
+--
+-- This is unlike a real DFA as we do not have a "dead" state but simply reject
+-- the rest of the string in our current state.
+--
+-- Created 09-26-2012
+-- Updated 05-20-2013
+-- Version 1.1
+-- Created by unsignedzero (David Tran)
 
+-- Front End Call
 h2 :: [Char] -> Bool
 h2 [] = True
 h2 (x:xs)
@@ -12,6 +24,10 @@ h2 (x:xs)
   | x == 'c' = h2cc xs
   | otherwise = False
 
+-- The important thing to remember is the first character seen in and the 
+-- current character which is denoted by the function name. 
+
+-- Back
 h2aa :: [Char] -> Bool
 h2aa [] = False
 h2aa (x:xs)
