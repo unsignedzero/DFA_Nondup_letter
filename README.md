@@ -3,15 +3,19 @@
 This is DFA that read in a string consisting of any combination of characters
 a b and c. This DFA will accept all strings whose starting and ending letter
 are not the same and given any character in the string, its left and right
-neighbor at the same as itself.
+neighbor at the same as itself. See image below.
 
-Created by unsignedzero (David Tran) originally on 09-26-2012 using 
+Created by unsignedzero (David Tran) originally on 09-26-2012 using
 GHC v 7.4.1.
 
 This code can be executed with runhaskell or manually loaded into ghci.
 The main function to call is mod7.
 
+![dfa image](dfa.png)
+
 # Version/Changelog #
+
+* Image added.
 
 ## 1.1 05-20-2013 #
 * Additional comments added to clarify the code.
@@ -26,5 +30,5 @@ The main function to call is mod7.
 * README created.
 
 ## 0.5 09-26-2012 #
-* Original working code posted with image. 
+* Original working code posted with image.
   Only works in GHCI as no main was created.
